@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import java.math.BigInteger;
 import java.util.List;
 
-@FeignClient(url = "http://localhost:8080", name = "producto-app")
+@FeignClient(name = "producto-app")
 public interface ProductoFeingClient {
 
     @GetMapping("/productos")
